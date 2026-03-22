@@ -74,7 +74,7 @@ export const projects = [
       "Un musée 3D à la première personne construit avec React Three Fiber présentant 12 chefs-d'œuvre de Van Gogh. Naviguez avec WASD pour explorer des environnements PBR procéduraux, et survolez les peintures pour révéler des histogrammes de couleurs en temps réel et des anecdotes historiques.",
     image: "/van_gogh.png",
     tags: ["React", "Three.js", "WebGL", "GLSL", "Data visualization"],
-    demo: "https://snazzy-trifle-15ab78.netlify.app",
+    demo: "https://vangogh-museum.vercel.app",
     source: "https://github.com/DevWizard82/vangogh-museum",
     bgClass: "bg-slate-800",
   },
