@@ -110,7 +110,7 @@ export const projects = [
       "Charts",
       "Offline-first",
     ],
-    demo: "https://DevWizard82.github.io/dataflow-landing",
+    demo: "https://devwizard82.github.io/dataflow_landing_page/",
     source: "https://github.com/DevWizard82/dataflow",
   },
 ];
