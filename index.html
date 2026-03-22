@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Anas Berrqia</title>
+
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='5' y='15' width='90' height='70' rx='15' fill='none' stroke='%23deb887' stroke-width='10'/><path d='M 25 35 L 45 50 L 25 65' fill='none' stroke='%23deb887' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/><line x1='55' y1='70' x2='80' y2='70' stroke='%23deb887' stroke-width='10' stroke-linecap='round'/></svg>"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#deb887",
+              "background-light": "#f8f7f6",
+              "background-dark": "#1f1a13",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 8rem;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .reveal.in-view {
+        opacity: 1 !important;
+        --tw-translate-x: 0px !important;
+        --tw-translate-y: 0px !important;
+        --tw-scale-x: 1 !important;
+        --tw-scale-y: 1 !important;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light text-slate-900 font-display overflow-x-hidden"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
