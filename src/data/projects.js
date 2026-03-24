@@ -6,9 +6,9 @@ export const projects = [
     titleKey: "p1_title",
     descKey: "p1_desc",
     title: "PropVal AI",
-    desc: "An interactive real estate valuation web app built with Streamlit. It integrates a custom Random Forest machine learning model to predict California property values in real-time with over 80% accuracy, featuring interactive mapping and dynamic data visualizations.",
+    desc: "A Streamlit real estate dashboard powered by a Random Forest model. Predicts California property values in real-time with 80.5% accuracy, featuring interactive maps and dynamic metrics.",
     desc_fr:
-      "Une application web interactive d'évaluation immobilière conçue avec Streamlit. Elle intègre un modèle de machine learning Random Forest sur mesure pour estimer la valeur des propriétés en Californie en temps réel avec une précision de plus de 80 %, incluant une cartographie interactive et des visualisations dynamiques.",
+      "Un tableau de bord immobilier Streamlit propulsé par un modèle Random Forest. Prédit la valeur des propriétés californiennes en temps réel avec 80,5% de précision, incluant une cartographie interactive.",
     image: "/propval_ai_thumbnail.png",
     tags: ["React", "Django", "Scikit-Learn"],
     demo: "https://california-real-estate-ai-6cpbj48p8azmhr4tdbhjmo.streamlit.app",
