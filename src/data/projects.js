@@ -6,9 +6,9 @@ export const projects = [
     titleKey: "p1_title",
     descKey: "p1_desc",
     title: "PropVal AI",
-    desc: "A full-stack real estate valuation platform. Integrates a custom machine learning model via a Django REST API into a modern React dashboard with interactive Leaflet mapping.",
+    desc: "An interactive real estate valuation web app built with Streamlit. It integrates a custom Random Forest machine learning model to predict California property values in real-time with over 80% accuracy, featuring interactive mapping and dynamic data visualizations.",
     desc_fr:
-      "Plateforme d'évaluation immobilière full-stack. Intègre un modèle de Machine Learning personnalisé via une API REST Django dans un tableau de bord React avec cartographie Leaflet interactive.",
+      "Une application web interactive d'évaluation immobilière conçue avec Streamlit. Elle intègre un modèle de machine learning Random Forest sur mesure pour estimer la valeur des propriétés en Californie en temps réel avec une précision de plus de 80 %, incluant une cartographie interactive et des visualisations dynamiques.",
     image: "/propval_ai_thumbnail.png",
     tags: ["React", "Django", "Scikit-Learn"],
     demo: "https://california-real-estate-ai-6cpbj48p8azmhr4tdbhjmo.streamlit.app",
