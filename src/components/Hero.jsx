@@ -81,18 +81,33 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-500">
-          <a
-            href="/Anas_Berrqia.pdf"
-            download="Anas_Berrqia.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all"
-          >
-            <span className="material-symbols-outlined">download</span>
-            {t("hero_badge") === "Engineering Student"
-              ? "Download Resume"
-              : "Télécharger le CV"}
-          </a>
+          {/* Dropdown Download Button */}
+          <div className="relative group cursor-pointer">
+            <div className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all">
+              <span className="material-symbols-outlined">download</span>
+              {t("hero_badge") === "Engineering Student"
+                ? "Download Resume"
+                : "Télécharger le CV"}
+            </div>
+
+            {/* Hidden Dropdown Menu */}
+            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-[#1C1F2A] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-primary/20 overflow-hidden flex flex-col z-50">
+              <a
+                href="/Anas_Berrqia_FR.pdf"
+                download="Anas_Berrqia_CV_FR.pdf"
+                className="px-4 py-3 hover:bg-primary/10 text-slate-900 dark:text-white font-medium text-sm transition-colors text-center border-b border-primary/10"
+              >
+                🇫🇷 Version Française
+              </a>
+              <a
+                href="/Anas_Berrqia_EN.pdf"
+                download="Anas_Berrqia_Resume_EN.pdf"
+                className="px-4 py-3 hover:bg-primary/10 text-slate-900 dark:text-white font-medium text-sm transition-colors text-center"
+              >
+                🇬🇧 English Version
+              </a>
+            </div>
+          </div>
 
           <a
             href="#contact"
