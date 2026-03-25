@@ -23,3 +23,29 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger {
+  display: block;
+  font-size: 24px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
