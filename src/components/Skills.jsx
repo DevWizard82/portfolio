@@ -83,7 +83,8 @@ export default function Skills() {
 
   useEffect(() => {
     const els = document.querySelectorAll(".skill-tilt");
-    if (els.length && window.VanillaTilt) {
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (els.length && window.VanillaTilt && isDesktop) {
       window.VanillaTilt.init(els, {
         max: 35,
         speed: 400,

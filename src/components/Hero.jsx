@@ -42,7 +42,8 @@ export default function Hero() {
 
     // VanillaTilt on profile card
     const el = document.querySelector(".profile-tilt");
-    if (el && window.VanillaTilt) {
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (el && window.VanillaTilt && isDesktop) {
       window.VanillaTilt.init(el, {
         max: 25,
         speed: 300,
