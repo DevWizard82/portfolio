@@ -4,16 +4,16 @@ export default function Footer() {
   const { t } = useLang();
 
   return (
-    <footer className="bg-white border-t border-primary/20 py-16 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
+    <footer className="bg-white border-t border-primary/20 py-10 md:py-16 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
           {/* Brand */}
           <div className="col-span-1 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-2xl">
+              <span className="material-symbols-outlined text-primary text-xl md:text-2xl">
                 terminal
               </span>
-              <h2 className="text-xl font-bold">Anas Berrqia</h2>
+              <h2 className="text-lg md:text-xl font-bold">Anas Berrqia</h2>
             </div>
             <p className="text-slate-500 max-w-sm">{t("footer_desc")}</p>
           </div>

@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLang } from "../context/LangContext";
 
 export default function Hero() {
   const { t } = useLang();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     // tsParticles neural network background
@@ -74,24 +75,30 @@ export default function Hero() {
             dangerouslySetInnerHTML={{ __html: t("hero_title") }}
           />
 
-          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-300">
+          <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-300">
             {t("hero_desc")}
           </p>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-500">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-500">
           {/* Dropdown Download Button */}
-          <div className="relative group cursor-pointer">
-            <div className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all">
+          <div
+            className="relative group cursor-pointer w-full sm:w-auto"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <div className="bg-primary text-white px-5 py-3 text-sm md:px-8 md:py-4 md:text-base rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-all">
               <span className="material-symbols-outlined">download</span>
               {t("hero_badge") === "Engineering Student"
                 ? "Download Resume"
                 : "Télécharger le CV"}
             </div>
 
-            {/* Hidden Dropdown Menu */}
-            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-[#1C1F2A] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-primary/20 overflow-hidden flex flex-col z-50">
+            {/* Dropdown Menu */}
+            <div
+              className={`absolute top-full left-0 mt-2 w-full bg-white dark:bg-[#1C1F2A] rounded-xl shadow-xl transition-all duration-300 border border-primary/20 overflow-hidden flex flex-col z-50 ${dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible sm:group-hover:opacity-100 sm:group-hover:visible"}`}
+            >
               <a
                 href="/Anas_Berrqia_FR.pdf"
                 download="Anas_Berrqia_CV_FR.pdf"
@@ -111,7 +118,7 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-primary/5 transition-all"
+            className="border-2 border-primary text-primary px-5 py-3 text-sm md:px-8 md:py-4 md:text-base rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/5 transition-all w-full sm:w-auto"
           >
             <span className="material-symbols-outlined">mail</span>
             {t("hero_badge") === "Engineering Student"

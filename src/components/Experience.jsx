@@ -29,17 +29,17 @@ export default function Experience() {
   const { t, lang } = useLang();
 
   return (
-    <section id="experience" className="mb-24">
+    <section id="experience" className="mb-16 md:mb-24">
       <h3
-        className="text-2xl font-bold mb-10 flex items-center gap-2 reveal opacity-0 -translate-x-10 transition-all duration-700 ease-out"
+        className="text-xl md:text-2xl font-bold mb-8 md:mb-10 flex items-center gap-2 reveal opacity-0 -translate-x-10 transition-all duration-700 ease-out"
         dangerouslySetInnerHTML={{ __html: t("exp_title") }}
       />
 
-      <div className="relative border-l-2 border-primary/20 ml-4 pl-8 space-y-12">
+      <div className="relative border-l-2 border-primary/20 ml-2 md:ml-4 pl-6 md:pl-8 space-y-8 md:space-y-12">
         {experiences.map((exp, i) => (
           <div key={i} className="relative">
             {/* Timeline dot */}
-            <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-white reveal opacity-0 scale-0 transition-all duration-700 ease-out delay-200" />
+            <div className="absolute -left-[25px] md:-left-[33px] top-0 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary ring-4 ring-white reveal opacity-0 scale-0 transition-all duration-700 ease-out delay-200" />
 
             {/* Content */}
             <div className="space-y-2 reveal opacity-0 translate-x-10 transition-all duration-700 ease-out delay-300">
@@ -49,12 +49,12 @@ export default function Experience() {
               </span>
 
               {/* Role */}
-              <h4 className="text-xl font-bold">
+              <h4 className="text-lg md:text-xl font-bold">
                 {exp.role[lang] ?? exp.role.en}
               </h4>
 
               {/* Company */}
-              <div className="flex items-center gap-2 text-slate-500 font-medium">
+              <div className="flex items-center gap-2 text-slate-500 text-sm md:text-base font-medium">
                 <span className="material-symbols-outlined text-base">
                   domain
                 </span>
@@ -62,7 +62,7 @@ export default function Experience() {
               </div>
 
               {/* Bullet list */}
-              <div className="text-slate-600 max-w-3xl mt-4">
+              <div className="text-slate-600 text-sm md:text-base max-w-3xl mt-3 md:mt-4">
                 <ul className="list-disc space-y-2 ml-4">
                   {(exp.bullets[lang] ?? exp.bullets.en).map((bullet, j) => (
                     <li key={j}>{bullet}</li>

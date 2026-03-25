@@ -95,15 +95,15 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="mb-24">
+    <section id="skills" className="mb-16 md:mb-24">
       <h3
-        className="text-2xl font-bold mb-10 flex items-center gap-2 text-slate-900 reveal opacity-0 -translate-x-10 transition-all duration-700 ease-out"
+        className="text-xl md:text-2xl font-bold mb-8 md:mb-10 flex items-center gap-2 text-slate-900 reveal opacity-0 -translate-x-10 transition-all duration-700 ease-out"
         dangerouslySetInnerHTML={{ __html: t("skills_title") }}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Full Stack Web */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-100">
+        <div className="bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-100">
           <h4 className="text-primary font-bold mb-6 uppercase text-xs tracking-widest">
             {t("skills_cat1")}
           </h4>
@@ -117,7 +117,7 @@ export default function Skills() {
         </div>
 
         {/* Data Science & AI */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-200">
+        <div className="bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-200">
           <h4 className="text-primary font-bold mb-6 uppercase text-xs tracking-widest">
             {t("skills_cat2")}
           </h4>
@@ -134,7 +134,7 @@ export default function Skills() {
         </div>
 
         {/* Mobile */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-300">
+        <div className="bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-primary/10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-300">
           <h4 className="text-primary font-bold mb-6 uppercase text-xs tracking-widest">
             {t("skills_cat3")}
           </h4>

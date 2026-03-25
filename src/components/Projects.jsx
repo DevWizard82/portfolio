@@ -71,7 +71,7 @@ function ProjectCard({ project, lang, t, index }) {
       </div>
 
       {/* Body */}
-      <div className="p-6 flex flex-col flex-1">
+      <div className="p-5 md:p-6 flex flex-col flex-1">
         <h4 className="font-bold text-lg mb-2">{title}</h4>
         <p className="text-slate-600 text-sm mb-4">{desc}</p>
 
@@ -147,14 +147,14 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" className="mb-24">
+    <section id="projects" className="mb-16 md:mb-24">
       {/* Header + Filters — slides in from left on scroll */}
       <div
         ref={headerRef}
-        className="reveal-left flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10"
+        className="reveal-left flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 mb-8 md:mb-10"
       >
         <h3
-          className="text-2xl font-bold flex items-center gap-2"
+          className="text-xl md:text-2xl font-bold flex items-center gap-2"
           dangerouslySetInnerHTML={{ __html: t("proj_h") }}
         />
         <div className="flex flex-wrap items-center gap-3">
@@ -178,7 +178,7 @@ export default function Projects() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
         {visibleProjects.map((project, i) => (
           <ProjectCard
             key={`${displayFilter}-${project.id}`}
