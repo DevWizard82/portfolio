@@ -67,12 +67,12 @@ export default function Header() {
               FR / EN
             </button>
 
-            <button
+            {/* <button
               onClick={() => setOpen(!open)}
               className="md:hidden text-3xl text-primary"
             >
               <span className="material-symbols-outlined">menu</span>
-            </button>
+            </button> */}
           </div>
         </div>
         {/* Mobile Nav */}
