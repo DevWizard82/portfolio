@@ -10,7 +10,7 @@ export const projects = [
     desc_fr:
       "Un tableau de bord immobilier Streamlit propulsé par un modèle Random Forest. Prédit la valeur des propriétés californiennes en temps réel avec 80,5% de précision, incluant une cartographie interactive.",
     image: "/propval_ai_thumbnail.png",
-    tags: ["Python", "ML", "Streamlit"],
+    tags: ["Python", "ML", "Streamlit", "Scikit-Learn"],
     demo: "https://california-real-estate-ai-6cpbj48p8azmhr4tdbhjmo.streamlit.app",
     source: "https://github.com/DevWizard82/california-real-estate-ai",
     bgClass: "bg-slate-100",
