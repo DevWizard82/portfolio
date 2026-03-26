@@ -60,7 +60,7 @@ export const projects = [
       "Railway",
       "Netlify",
     ],
-    demo: "https://glowing-paletas-7e25a6.netlify.app",
+    demo: "https://autolux-zeta.vercel.app",
     source: "https://github.com/DevWizard82/autolux",
     bgClass: "bg-slate-800",
   },
