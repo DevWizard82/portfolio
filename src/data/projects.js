@@ -58,7 +58,7 @@ export const projects = [
       "Express",
       "PostgreSQL",
       "Railway",
-      "Netlify",
+      "Vercel",
     ],
     demo: "https://autolux-zeta.vercel.app",
     source: "https://github.com/DevWizard82/autolux",
